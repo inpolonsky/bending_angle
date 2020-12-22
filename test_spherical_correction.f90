@@ -79,12 +79,6 @@ else
    zsurf = alt(1)
 endif
 
-! if only pressure, temperature and water vapor 
-! the altitude can be computed using cmpalt
-! uncomment the following line
-
-! call cmpalt(nlev, p, temp, hum, zsurf, alt, top_at_1, 45.0_wp)
-
 ! compute solar zenith cosine without effect of refraction
 call spherical_angles(nlev, zsurf, RE, alt, mu0, mu) 
 
